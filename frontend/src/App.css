@@ -1,0 +1,283 @@
+.App {
+  text-align: center;
+  background-color: #333333;
+}
+
+
+/* Navbar Container */
+nav {
+  background-color: #333333; /* Background color */
+  color: #fff; /* Text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo style */
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color:white;
+}
+
+/* Links style */
+nav a {
+  color: #e62323;
+  text-decoration: none;
+  margin-right: 25px;
+  font-weight: bold;
+}
+
+
+/* Active link style */
+nav a#home {
+  color: #a3d3cc; /* Set the color for the "Home" link */
+}
+
+/* Styling for Home Component */
+#homepage {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 20px;
+  background-color: rgb(167, 156, 156);
+  height: 100vh;
+}
+#content {
+  flex: 2; 
+  margin-right: 20px; 
+}
+
+#profilepic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-bottom: 10px;
+}
+
+#textarea textarea {
+  width: 100vh;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 16px;
+  min-height: 100px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+#post-feed {
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Styling for Signin and Signup Forms */
+
+h2 {
+  text-align: center;
+}
+
+#Signin {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(237, 185, 185, 0.1);
+  background-color: #fff;
+}
+
+#Signin label,
+#Signin input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#Signin label {
+  font-weight: bold;
+}
+
+#Signin input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+#Signin button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#Signin button:hover {
+  background-color: #0056b3;
+}
+ /* Styling for Signup Form */
+
+#Signup {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#Signup label,
+#Signup input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#Signup label {
+  font-weight: bold;
+}
+
+#Signup input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+#Signup button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745; /* Green color for signup button */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#Signup button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+#dashboard-popup{
+  justify-content:space-between;
+  position: fixed;
+  top:55px;
+  left:45%;
+  
+}
+/* Dashboard Link Styling */
+#dashboard-popup ul {
+  list-style: none; /* Remove bullets */
+}
+.dashboard-link {
+  list-style:none;
+  text-decoration: none;
+  color:rgb(217, 49, 49); /* Link color */
+  font-size:16px;
+  margin: 5px 10px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+
+  /* You can add more styling as needed */
+}
+
+.dashboard-link:hover {
+  color: #5a5b5d; /* Change color on hover */
+  font-weight: bold; /* Make the text bold on hover */
+}
+
+
+
+/* Posts.css */
+
+/* Style for the container div */
+.post-container {
+  
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  }
+  
+  /* Style for the text area */
+  .post-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  }
+  
+  /* Style for the create post button */
+  .post-button {
+  background-color: #454647;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  /* Style for individual posts */
+.post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px; /* Reduced margin */
+  padding: 5px; /* Reduced padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px; /* Reduced font size */
+}
+
+  
+  /* Style for the delete button (the 'x') */
+  .post-delete-button {
+  background-color: #4d4a49;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  }
+
+
+
+  /* Like.css */
+#Like-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  }
+  
+  #Like-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #545556;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  #Like-likes {
+  margin-top: 10px;
+  font-size: 18px;
+  }
